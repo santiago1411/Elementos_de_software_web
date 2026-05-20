@@ -1,0 +1,106 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color:antiquewhite;
+    color: #333;
+    line-height: 1.6;
+    margin: 0; /* margen de la pagina */
+    padding: 0; /*relleno de la pagina */
+}
+
+header {
+    background-color:rebeccapurple;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0; /* Mantiene el menú en la parte superior al hacer scroll */
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+article {
+    border-left: 4px solid rebeccapurple;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+aside {
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #0e0202;
+}
+
+th {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+footer {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px
+}
+
+.resaltado {
+    color: rebeccapurple;
+}
+
+.boton {
+    display: inline-block;
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #ff6347;
+}
+
+#mensaje-importante {
+    text-align: center;
+    font-size: 1.2em;
+}

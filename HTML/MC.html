@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MC.css">
+    <title>Modelo de caja</title>
+</head>
+<body>
+    <header class="hero-banner">
+        <h1>Semana 4: Modelo de caja y css avanzado</h1>
+    </header>
+    
+    <main class="main-container">
+        <h2>El modelo de caja y el display</h2>
+
+        <p>Cada elemento HTML es tratado por el navegador como una caja rectangular con <span class="important-text">height, width, margin, padding y border</span>. Gracias a la regla <span class="code-snippet">box-sizing: border-box</span> que hemos aplicado en el CSS, ajustar las dimensiones es mucho más predecible.</p>
+        
+        <p>Los navegadores web aplican valores por defecto a los elementos. Este párrafo es un elemento de bloque (<span class="code-snippet">display: block</span>), mientras que las palabras en color fucsia son en línea (<span class="code-snippet">display: inline</span>).</p>
+
+        <h2>Jugando con Fondos (Background)</h2>
+
+        <div>
+            <div class="image-box"></div>
+            <div style="display: inline-block; vertical-align: middle; max-width: calc(100% - 180px);"> 
+                <p>El logotipo de CSS de la izquierda utiliza <span class="code-snippet">background-size: contain</span>. Esto garantiza que la imagen aumente o se reduzca proporcionalmente sin ser recortada, adaptándose exactamente al contenedor de 150x150px.</p>
+            </div>
+        </div>
+
+        <h2>Desbordamiento de contenido (Overflow)</h2>
+        <p>A continuación vemos qué pasa cuando un contenedor tiene un alto estricto pero recibe mucho texto. Hemos usado <span class="code-snippet">overflow: auto</span> para controlarlo:</p>
+
+        <div class="overflow-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+        </div>
+
+        <div class="hidden-mensaje">
+            Este texto tiene aplicada la regla display: none, simulando cómo ocultaríamos un banner de cookies. ¡Solo lo verás si abres el Inspector de DevTools!
+        </div>
+    </main>
+</body>    
+</html>

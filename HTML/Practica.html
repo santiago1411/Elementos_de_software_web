@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>PAgina de Practica</title>
+        <link rel="stylesheet" href="Practica.css">
+    </head>
+    <body>
+        <header id="inicio">
+            <h1>Construccón de software web</h1>
+            <p>Resumen Semana N3 html y css intermedio</p>
+        </header>
+
+        <nav>
+            <a href="#Semantica">Secciones semanticas HTML</a>
+            <a href="#Enlaces">Enlaces e imagenes</a>
+            <a href="#Tablas">Tablas</a>
+            <a href="#css-estilos">Estilos css y selectores</a>
+        </nav>
+
+        <main>
+            <section id="Semantica">
+                <h2 class="resaltado">1. Etiquetas Semanticas</h2>
+                <article>
+                    <h3>El uso de las etiquetas semanticas: Section, article, aside</h3>
+                    <p>Es esencial estructurar nuestra pagina de acuerdo a la funcion del contenido. <strong>article</strong> es contenido independiente. Mientras que <strong>section</strong> agrupa contenido relacionado. 
+                    <strong>aside</strong> Por otro lado contiene información de menor relevancia</p>
+                </article>
+                <aside>
+                    <p><em>Nota:</em> Usar correctamente estas etiquetas no cambia el diseño, pero aporta un gran valor para la <strong>accesibilidad</strong> de la información para los usuarios</p>
+                </aside>
+            </section>
+            <section id="Enlaces">
+                <h2 class="resaltado">2. Enlaces e imagenes</h2>
+                <p>Con la etiqueta <em>a</em>podemos conectar nuestra web con diferentes secciones. Para volver a la sección principal, puedes hacer click en el enlace que contenga la ruta hacia el principio </p>
+                <a href="#inicio" class="boton" title="volver al principio de la pagina">Volver arriba</a>
+                <p>La segunda forma de usar la etiqueta <em>a</em> nos sirve para enlazar paginas externas dentro de nuestra misma pagina. Permitiendo abrirlas dentro de la misma pestaña o en una pestaña nueva</p>
+                <a href="https://www.google.com" target="_blank" class="boton">Google pagina externa</a>
+                <a href="https://www.google.com" class="boton">Google pagina interna</a>
+
+                <p>Tambien podemos incluir imagenes usando la etiqueta <strong>img</strong> recuerda siempre usar el atibuto src y alt</p>
+                <img src="https://ax-blog.axarnet.dev/blog/images/blog/2025/etiqueta-a-href/etiquetas-a-href-en-html.jpg" alt="Ejemplo de etiqueta a href en HTML"
+                style="max-width: 250px; display: block; margin: 10px auto; border-radius:8px">
+            </section>
+
+            <section id="Tablas">
+                <h2 class="resaltado">3. Presentanción de datos</h2>
+                <p>Las tablas hoy en dias se utilizan para presentar datos tabulados.</p>
+                <table>
+                    <tr>
+                        <th>Etiqueta HTML</th>
+                        <th>Descripcion o funcionalidad</th>
+                    </tr>
+                    <tr>
+                        <td>Strong</td>
+                        <td>Resalta el texto con negrita</td>
+                    </tr>
+                    <tr>
+                        <td>Em</td>
+                        <td>Resalta el texto con cursiva</td>
+                    </tr>
+                    <tr>
+                        <td>Br</td>
+                        <td>Salto de linea</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="css-estilos">
+                <h2 class="resaltado">4. Estilos CSS y selectores</h2>
+                <article>
+                    <p>El aspecto de esta pagina esta controlado por CSS. En el codigo html notaras el uso de css por medio de los selectores, tales como: selector <em>etiqueta</em>, selector <em>clase</em>, selector <em>id</em>, selector <em>pseuclase</em>.</p>
+
+                    <p id="mensaje-importante"><code>La cascada:</code> El orden de escritura, la especificacion y la importancia de los estilos css.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>Practica de HTML semantico y CSS intermedio</p>
+            <p>Copyright 2026 - Santiago Alexander Osorno (resumen)</p>
+        </footer>
+
+    </body>
+</html>
